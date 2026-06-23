@@ -84,10 +84,16 @@ borrador, hecho por Sixto, es la señal de qué propuesta eligió.
      quieres, y dale a Enviar."*
    - Etiqueta el mensaje/hilo con `Publicaciones` (`label_message` /
      `label_thread`) para que se pueda encontrar fácil la próxima ronda.
+   - Además, etiqueta el mismo mensaje con las etiquetas de sistema `INBOX`
+     y `STARRED` (mismo `label_message`, son IDs de etiqueta válidos aunque
+     no aparezcan en `list_labels`). Esto hace que el borrador no quede
+     escondido solo en la carpeta Borradores: aparece también destacado con
+     estrella en la bandeja de entrada principal, para que sea difícil que
+     se le pase a Sixto.
 
 6. **Avisar.**
-   - Un borrador solo no notifica nada — manda un `PushNotification` tipo
-     "Ideas de post de la semana listas en Borradores de Gmail".
+   - Además de lo anterior, manda un `PushNotification` tipo "Ideas de post
+     de la semana listas — destacadas en tu bandeja de entrada".
 
 7. Cierra habiendo creado el borrador y enviado el aviso — eso es lo
    imprescindible. El commit del historial es un extra, no un requisito
