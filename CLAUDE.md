@@ -27,7 +27,12 @@ borrador, hecho por Sixto, es la señal de qué propuesta eligió.
 2. **Actualizar `historial.md`.**
    - Añade una entrada con fecha, resultado de la ronda anterior y texto
      final si hubo publicación.
-   - Haz commit + push de ese cambio al repo.
+   - Intenta hacer commit + push de ese cambio al repo, pero esto es
+     "mejor esfuerzo": el entorno en la nube puede no tener permiso de
+     escritura sobre el repo (solo lectura, por ser público). Si el push
+     falla, no es un error fatal — sigue con el resto del procedimiento
+     igualmente. La fuente de verdad real del historial es Gmail (los
+     hilos etiquetados `Publicaciones`), no este fichero.
    - No edites `perfil.md` automáticamente — ese fichero lo amplía Sixto a
      mano cuando quiere añadir contexto nuevo.
 
@@ -54,5 +59,6 @@ borrador, hecho por Sixto, es la señal de qué propuesta eligió.
    - Un borrador solo no notifica nada — manda un `PushNotification` tipo
      "Ideas de post de la semana listas en Borradores de Gmail".
 
-6. Cierra dejando comiteado y empujado `historial.md` con la entrada de esta
-   ronda (estado "pendiente" hasta la próxima revisión).
+6. Cierra habiendo creado el borrador y enviado el aviso — eso es lo
+   imprescindible. El commit del historial es un extra, no un requisito
+   para considerar la ronda completada.
