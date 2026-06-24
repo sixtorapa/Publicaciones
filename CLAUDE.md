@@ -53,6 +53,11 @@ borrador, hecho por Sixto, es la señal de qué propuesta eligió.
    - Para cada hallazgo, guarda: fuente (nombre + URL real), de qué trata en
      2-3 frases, y si la fuente tiene una imagen/gráfico/diagrama público
      que ilustre el punto (URL directa de esa imagen, no inventada).
+   - Usa siempre la URL **canónica/directa** de la fuente original (la que
+     verías en la barra de direcciones de esa página), nunca un enlace de
+     redirección de buscador (tipo `google.com/url?q=...`) ni un acortador.
+     Si la herramienta de búsqueda te da un enlace envuelto, resuelve o
+     limpia la URL real antes de guardarla.
    - No repitas fuentes/temas ya usados en rondas anteriores según
      `historial.md`.
 
@@ -84,17 +89,14 @@ borrador, hecho por Sixto, es la señal de qué propuesta eligió.
      quieres, y dale a Enviar."*
    - Etiqueta el mensaje/hilo con `Publicaciones` (`label_message` /
      `label_thread`) para que se pueda encontrar fácil la próxima ronda.
-   - Además, etiqueta el mismo mensaje con las etiquetas de sistema `INBOX`
-     y `STARRED` (mismo `label_message`, son IDs de etiqueta válidos aunque
-     no aparezcan en `list_labels`). Esto hace que el borrador no quede
-     escondido solo en la carpeta Borradores: aparece también destacado con
-     estrella en la bandeja de entrada principal, para que sea difícil que
-     se le pase a Sixto.
+   - Además, etiqueta el mismo mensaje con la etiqueta de sistema `STARRED`
+     (mismo `label_message`, es un ID de etiqueta válido aunque no aparezca
+     en `list_labels`). Así el borrador aparece destacado con estrella en
+     "Destacados", que es la señal real que Sixto revisa cada semana — no
+     hay ningún canal de notificación push que funcione desde este entorno
+     en la nube, así que no lo intentes (no hay terminal local ni Remote
+     Control activo desde aquí).
 
-6. **Avisar.**
-   - Además de lo anterior, manda un `PushNotification` tipo "Ideas de post
-     de la semana listas — destacadas en tu bandeja de entrada".
-
-7. Cierra habiendo creado el borrador y enviado el aviso — eso es lo
+6. Cierra habiendo creado el borrador (etiquetado y destacado) — eso es lo
    imprescindible. El commit del historial es un extra, no un requisito
    para considerar la ronda completada.
